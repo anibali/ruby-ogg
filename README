@@ -1,0 +1,34 @@
+= ruby-ogg
+
+== Synopsis
+
+ruby-ogg brings pure Ruby love to the Ogg container format. It provides
+the abstraction to read packets from an Ogg bitstream without worrying
+about things such as captures and pages.
+
+== Vorbis
+
+Vorbis is not the same as Ogg. Vorbis is an audio codec which is commonly
+packed in the Ogg container format with the file extension ".ogg". Because
+Vorbis has become so deeply associated with Ogg, a Vorbis metadata decoder
+is bundled with ruby-ogg. Not only does it provide an example of how to
+use ruby-ogg, but is also fully functional. See the Vorbis page for
+more information.
+
+== Features
+
+* 100% pure Ruby
+* Read Ogg bitstreams
+* Read Vorbis metadata
+
+== TODO
+
+* Write Ogg bitstreams
+* Write Vorbis metadata
+* Check page integrity with CRCs
+
+== Feedback
+
+Comments? Questions? Bugs? Typos? Feel free to report everything on the 
+Rubyforge project page at http://rubyforge.org/projects/ruby-ogg.
+

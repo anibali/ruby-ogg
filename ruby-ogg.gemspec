@@ -2,7 +2,7 @@ require 'rubygems'
 
 spec = Gem::Specification.new do |spec|
   spec.name = 'ruby-ogg'
-  spec.version = '0.0.0'
+  spec.version = '0.0.1'
   spec.summary = 'A library for reading Ogg bitstreams'
   spec.author = 'Aiden Nibali'
   spec.email = 'dismal.denizen@gmail.com'

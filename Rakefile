@@ -27,3 +27,11 @@ Rake::RDocTask.new('rdoc') do |t|
   t.title = "#{spec.name}-#{spec.version} API documentation"
 end
 
+rubyforge_user = 'dismal_denizen'
+rubyforge_path = "/var/www/gforge-projects/#{spec.rubyforge_project}/"
+desc 'Upload documentation to RubyForge.'
+
+task 'upload-docs' => ['rdoc'] do
+  sh "scp -r #{rdoc_dir}/* #{rubyforge_user}@rubyforge.org:#{rubyforge_path}"
+end
+

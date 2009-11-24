@@ -6,14 +6,30 @@ ruby-ogg brings pure Ruby love to the Ogg container format. It provides
 the abstraction to read packets from an Ogg bitstream without worrying
 about things such as captures and pages.
 
+ require 'ogg'
+ 
+ open("file.ogg", "rb") do |file|
+   dec = Ogg::Decoder.new(file)
+   packet = dec.read_packet
+   # Do something with the packet...
+ end
+
 == Vorbis
 
 Vorbis is not the same as Ogg. Vorbis is an audio codec which is commonly
 packed in the Ogg container format with the file extension ".ogg". Because
-Vorbis has become so deeply associated with Ogg, a Vorbis metadata decoder
-is bundled with ruby-ogg. Not only does it provide an example of how to
-use ruby-ogg, but is also fully functional. See the Vorbis page for
-more information.
+Vorbis has become so deeply associated with Ogg (and I'm so nice), a 
+Vorbis metadata decoder is bundled with ruby-ogg. Not only does it provide 
+an example of how to use ruby-ogg, but is also fully functional. See the 
+Vorbis page for more information.
+
+ require 'vorbis'
+ 
+ Vorbis::Info.open('echoplex.ogg') do |info|
+   info.comments[:artist].first #=> "Nine Inch Nails"
+   info.comments[:title].first  #=> "Echoplex"
+   info.sample_rate             #=> 44100
+ end
 
 == Features
 

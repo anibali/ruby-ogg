@@ -36,12 +36,12 @@ Vorbis page for more information.
 * 100% pure Ruby
 * Read Ogg bitstreams
 * Read Vorbis metadata
+* Optionally validate page integrity with CRCs
 
 == TODO
 
 * Write Ogg bitstreams
 * Write Vorbis metadata
-* Check page integrity with CRCs
 
 == Feedback
 

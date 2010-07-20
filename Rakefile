@@ -22,8 +22,8 @@ rdoc_dir = 'doc'
 
 Rake::RDocTask.new('rdoc') do |t|
   t.rdoc_dir = rdoc_dir
-  t.rdoc_files.include('README', 'lib/**/*.rb')
-  t.main = 'README'
+  t.rdoc_files.include('README.rdoc', 'lib/**/*.rb')
+  t.main = 'README.rdoc'
   t.title = "#{spec.name}-#{spec.version} API documentation"
 end
 

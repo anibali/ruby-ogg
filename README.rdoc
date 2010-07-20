@@ -18,10 +18,10 @@ about things such as captures and pages.
 
 Vorbis is not the same as Ogg. Vorbis is an audio codec which is commonly
 packed in the Ogg container format with the file extension ".ogg". Because
-Vorbis has become so deeply associated with Ogg (and I'm so nice), a 
-Vorbis metadata decoder is bundled with ruby-ogg. Not only does it provide 
-an example of how to use ruby-ogg, but is also fully functional. See the 
-Vorbis page for more information.
+Vorbis has become so deeply associated with Ogg (and I'm such a nice guy), a 
+Vorbis metadata decoder is bundled with ruby-ogg. This provides
+a good example of how to use ruby-ogg, and is also fully functional. See the 
+Vorbis::Info documentation for more information.
 
  require 'vorbis'
  
@@ -37,6 +37,7 @@ Vorbis page for more information.
 * Read Ogg bitstreams
 * Read Vorbis metadata
 * Optionally validate page integrity with CRCs
+  (eg <code>Ogg::Decoder.new(file, :verify_checksum => true)</code>)
 
 == TODO
 

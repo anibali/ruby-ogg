@@ -1,10 +1,15 @@
 require 'test/unit'
 
+require 'rubygems'
 require 'ogg'
 
 class OggTest < Test::Unit::TestCase
+  def setup
+    @test_dir = File.dirname(File.expand_path(__FILE__))
+  end  
+  
   def test_read_page
-    dec = Ogg::Decoder.new open('test/sudo_modprobe.ogg')
+    dec = Ogg::Decoder.new open(File.join(@test_dir, "sudo_modprobe.ogg"))
     # First page
     page = dec.read_page
     assert_equal 0, page.page_sequence_number
@@ -20,7 +25,7 @@ class OggTest < Test::Unit::TestCase
   end
   
   def test_read_packet
-    dec = Ogg::Decoder.new open('test/sudo_modprobe.ogg')
+    dec = Ogg::Decoder.new open(File.join(@test_dir, "sudo_modprobe.ogg"))
     # First packet
     packet = dec.read_packet
     assert_equal 30, packet.size

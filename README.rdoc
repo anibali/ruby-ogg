@@ -46,5 +46,5 @@ Vorbis page for more information.
 == Feedback
 
 Comments? Questions? Bugs? Typos? Feel free to report everything on the 
-Rubyforge project page at http://rubyforge.org/projects/ruby-ogg.
+GitHub issue tracker at http://github.com/dismaldenizen/ruby-ogg/issues.
 

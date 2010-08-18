@@ -3,14 +3,14 @@
 == Synopsis
 
 ruby-ogg brings pure Ruby love to the Ogg container format. It provides
-the abstraction to read packets from an Ogg bitstream without worrying
-about things such as captures and pages.
+a nice abstraction which permits you to access packets from an Ogg bitstream
+without worrying about strange things such as "captures" and "pages".
 
  require 'ogg'
  
  open("file.ogg", "rb") do |file|
-   dec = Ogg::Decoder.new(file)
-   packet = dec.read_packet
+   dec = Ogg::Decoder.new(file) # Create a decoder for an Ogg file
+   packet = dec.read_packet     # Direct access to packet, no pages!
    # Do something with the packet...
  end
 

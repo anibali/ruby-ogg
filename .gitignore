@@ -1,3 +1,6 @@
-doc
-pkg
+doc/
+html/
+coverage/
+pkg/
+html/
 *~

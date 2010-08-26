@@ -44,8 +44,9 @@ Vorbis::Info documentation for more information.
 * Write Ogg bitstreams
 * Write Vorbis metadata
 
-== Feedback
+== Links
 
-Comments? Questions? Bugs? Typos? Feel free to report everything on the 
-GitHub issue tracker at http://github.com/dismaldenizen/ruby-ogg/issues.
+* Bug reports: http://github.com/dismaldenizen/ruby-ogg/issues
+* Documentation: http://rdoc.info/projects/dismaldenizen/ruby-ogg
+* Discussion/help: http://rubyforge.org/forum/?group_id=9160
 

@@ -3,4 +3,5 @@ html/
 coverage/
 pkg/
 html/
+.yardoc/
 *~

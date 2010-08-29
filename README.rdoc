@@ -5,6 +5,8 @@
 ruby-ogg brings pure Ruby love to the Ogg container format. It provides
 a nice abstraction which permits you to access packets from an Ogg bitstream
 without worrying about strange things such as "captures" and "pages".
+For more information about Ogg bitstreams check out the blog post at
+http://dismaldenizen.wordpress.com/2010/08/20/the-ogg-container-format-explained/
 
  require 'ogg'
  

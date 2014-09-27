@@ -106,8 +106,6 @@ module Vorbis
   # A BinData::BasePrimitive which represents a list of comments as per 
   # the Vorbis I comment header specification.
   class Comments < BinData::BasePrimitive
-    register(self.name, self)
-    
     def read_and_return_value(io)
       n_comments = read_uint32le(io)
       comments = InsensitiveHash.new

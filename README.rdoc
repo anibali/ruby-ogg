@@ -48,7 +48,5 @@ Vorbis::Info documentation for more information.
 
 == Links
 
-* Bug reports: http://github.com/dismaldenizen/ruby-ogg/issues
-* Documentation: http://rdoc.info/projects/dismaldenizen/ruby-ogg
-* Discussion/help: http://rubyforge.org/forum/?group_id=9160
-
+* Bug reports: http://github.com/anibali/ruby-ogg/issues
+* Documentation: http://rdoc.info/github/anibali/ruby-ogg/master/frames

@@ -9,7 +9,8 @@ class OggTest < Test::Unit::TestCase
   end  
   
   def test_read_page
-    dec = Ogg::Decoder.new open(File.join(@test_dir, "sudo_modprobe.ogg"))
+    dec = Ogg::Decoder.new(open(File.join(@test_dir, "sudo_modprobe.ogg")),
+      :verify_checksum => true)
     # First page
     page = dec.read_page
     assert_equal 0, page.page_sequence_number
@@ -25,7 +26,8 @@ class OggTest < Test::Unit::TestCase
   end
   
   def test_read_packet
-    dec = Ogg::Decoder.new open(File.join(@test_dir, "sudo_modprobe.ogg"))
+    dec = Ogg::Decoder.new(open(File.join(@test_dir, "sudo_modprobe.ogg")),
+      :verify_checksum => true)
     # First packet
     packet = dec.read_packet
     assert_equal 30, packet.size

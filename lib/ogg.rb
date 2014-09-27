@@ -175,7 +175,7 @@ module Ogg
       
       self.checksum = cs
       
-      return(cs == crc_reg)
+      return cs == crc_reg
     end
     
     # Cached CRC lookup table.
@@ -243,7 +243,7 @@ module Ogg
       0x89b8fd09,0x8d79e0be,0x803ac667,0x84fbdbd0,
       0x9abc8bd5,0x9e7d9662,0x933eb0bb,0x97ffad0c,
       0xafb010b1,0xab710d06,0xa6322bdf,0xa2f33668,
-      0xbcb4666d,0xb8757bda,0xb5365d03,0xb1f740b4]
+      0xbcb4666d,0xb8757bda,0xb5365d03,0xb1f740b4].freeze
   end
 end
 

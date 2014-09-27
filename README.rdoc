@@ -33,6 +33,25 @@ Vorbis::Info documentation for more information.
    info.sample_rate             #=> 44100
  end
 
+== Installation
+
+Add this line to your application's Gemfile:
+
+ gem 'ruby-ogg'
+
+And then execute:
+
+ $ bundle
+
+Or install it yourself as:
+
+ $ gem install ruby-ogg
+
+== Requirements
+
+* Ruby 1.8+
+* RubyGems
+
 == Features
 
 * 100% pure Ruby
